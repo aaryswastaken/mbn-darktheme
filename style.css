@@ -1,0 +1,101 @@
+:root {
+    --bg-color: #1E1E1E;
+    --bg2-color: #525252;
+    --bg3-color: #3a3a3a;
+    --font-color: #e3e9ec;
+    --success-color: #c0cea8;
+}
+
+html {
+    background-color: var(--bg-color) !important;
+}
+
+body {
+    color: var(--font-color) !important;
+}
+
+.panel {
+    background-color: var(--bg-color) !important;
+}
+
+.panel--outlined {
+    border: 0 !important;
+}
+
+.panel--success {
+    background-color: var(--success-color) !important;
+    color: var(--bg-color) !important; /* yes */
+}
+
+.panel--bg-lightest, .content-toolbar, .jstree-default, .jstree-anchor, .jstree-default, .jstree-wholerow, .content-filter,
+.list--lined>li, .list--outlined-between>li, .list--outlined>li, .list--overlined>li, .list-enhanced1--inset>li, .list-enhanced1>li,
+#page, select, .yui-skin-sam .yui-dt th {
+    background-color: var(--bg-color) !important;
+    border: 0 !important;
+    color: var(--font-color) !important;
+}
+
+.msg-information {
+    background-color: #999f63 !important;
+    border: 0 !important;
+}
+
+/* Messagerie */
+.modal__content {
+    color: #708c9a !important;
+}
+
+.js-signature {
+    background-color: #fff !important;
+}
+
+/* notes */
+tr:hover {
+    background-color: var(--bg2-color) !important;
+}
+
+td {
+    border: 0 !important;
+}
+
+tr.yui-dt-even, tr.yui-dt-even > td {
+    background-color: var(--bg3-color) !important;
+}
+
+tr.yui-dt-odd, tr.yui-dt-odd > td {
+    background-color: var(--bg-color) !important;
+}
+
+.gestion fieldset, #contenu .fieldset, #popin_question fieldset {
+    color: var(--font-color) !important;
+    background-color: var(--bg-color) !important;
+}
+
+#grille_dossier_absence > table > * > tr, .yui-dt-first > th {
+    background-color: var(--bg-color) !important;
+}
+
+#contenu > img {
+    width: 0;
+    height: 0;
+}
+
+.content-toolbar {
+    border-bottom: 2px solid #006dca !important;
+}
+
+.table-skin-1__header {
+    border-bottom: 1px solid white !important;
+}
+
+.row__group > div > h2 {
+    border-bottom: 1px solid white !important;
+}
+
+.text--slate-darker {
+    color: var(--font-color) !important;
+}
+
+.js-consulterMessage {
+    color: #08bee8 !important;
+}
