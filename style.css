@@ -290,3 +290,7 @@ div .bloc-note-releve .note-releve {
     border-radius: var(--border-bloc-radius);
     box-shadow: inset #777 0 0 0 20px;
 }
+.icon-placeholder {
+    background-image: none !important;
+    background-color: #0000 !important;
+}

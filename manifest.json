@@ -5,8 +5,14 @@
   "manifest_version": 3,
   "content_scripts": [
     {
-      "matches": ["https://*.monbureaunumerique.fr/*"],
-      "css": ["style.css"]
+      "matches": ["https://*.monbureaunumerique.fr/*", "https://monbureaunumerique.fr/*"],
+      "css": ["style.css"],
+      
+      "exclude_matches": ["https://*.modle.monbureaunumerique.fr/*"]
+    },
+    {
+      "matches": ["https://*.moodle.monbureaunumerique.fr/*"],
+      "css": ["moodle.css","style.css"]
     }
   ],
   "icons": {

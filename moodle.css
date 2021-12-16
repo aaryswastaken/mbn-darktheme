@@ -1,0 +1,26 @@
+
+:root {
+    --bg-color: #1e1e1e;
+    --bg2-color: #525252;
+    --bg3-color: #3a3a3a;
+    --font-color: #e3e9ec;
+}
+
+.card {
+    background-color: #ffffff14 !important;
+}
+
+a:hover {
+    color: #3ea4ff !important;
+}
+.navbar.bg-white ,
+.navbar {
+    background-color: var(--bg-color) !important;
+    background: var(--bg-color) !important;
+}
+.navbar .bg-gray {
+    background-color: var(--bg3-color) !important;
+}
+.navbar .btn.nav-link {
+    border:0;
+}
