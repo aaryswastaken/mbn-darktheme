@@ -8,7 +8,7 @@
       "matches": ["https://*.monbureaunumerique.fr/*", "https://monbureaunumerique.fr/*"],
       "css": ["style.css"],
       
-      "exclude_matches": ["https://*.modle.monbureaunumerique.fr/*"]
+      "exclude_matches": ["https://*.moodle.monbureaunumerique.fr/*"]
     },
     {
       "matches": ["https://*.moodle.monbureaunumerique.fr/*"],
