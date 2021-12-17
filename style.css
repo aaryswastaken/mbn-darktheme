@@ -4,6 +4,9 @@
     --bg3-color: #3a3a3a;
     --font-color: #e3e9ec;
     --success-color: #c0cea8;
+    --seance-passee: #36abcc;
+    --seance-future: #7ed0e8;
+    --seance-font: #313131;
 }
 
 html {
@@ -14,7 +17,7 @@ body {
     color: var(--font-color) !important;
 }
 
-.panel {
+.cke_editable:not > .panel {
     background-color: var(--bg-color) !important;
 }
 
@@ -27,22 +30,53 @@ body {
     color: var(--bg-color) !important; /* yes */
 }
 
-.panel--bg-lightest,
-.content-toolbar,
-.jstree-default,
-.jstree-anchor,
-.jstree-default,
-.jstree-wholerow,
-.content-filter,
-.list--lined > li,
-.list--outlined-between > li,
-.list--outlined > li,
-.list--overlined > li,
-.list-enhanced1--inset > li,
-.list-enhanced1 > li,
-#page,
-select,
-.yui-skin-sam .yui-dt th {
+#zoneUniqueUpload-uploadzone {
+    background-color: #fff;
+    color: #111;
+}
+
+#fermetures {
+    background: #525252 !important;
+}
+
+.marqueur_heure_repere {
+    background: rgba(0, 0, 0, 0) !important;
+}
+
+#selecteur_vue > li > a {
+    background-color: var(--bg-color) !important;
+    color: var(--font-color) !important;
+}
+
+table#vue_mensuelle .seance_moi.seance_passee:hover, #evenements table.evenements .seance_moi.seance_passee:hover,
+#evenements table.cdt .seance_moi.seance_passee:hover, table#vue_mensuelle .seance_annulee.seance_passee:hover,
+#evenements table.evenements .seance_annulee.seance_passee:hover, #evenements table.cdt .seance_annulee.seance_passee:hover,
+table#vue_mensuelle .seance_moi.seance_passee, #evenements table.evenements .seance_moi.seance_passee,
+#evenements table.cdt .seance_moi.seance_passee, table#vue_mensuelle .seance_annulee.seance_passee,
+#evenements table.evenements .seance_annulee.seance_passee, #evenements table.cdt .seance_annulee.seance_passee {
+    background-color: var(--seance-passee) !important;
+    color: var(--seance-font) !important;
+}
+
+#vue_mensuelle div.seance_moi:hover, #evenements table.evenements div.seance_moi:hover, #evenements table.cdt div.seance_moi:hover,
+#vue_mensuelle div.seance_moi, #evenements table.evenements div.seance_moi, #evenements table.cdt div.seance_moi {
+    background-color: var(--seance-future) !important;
+    color: var(--seance-font) !important;
+}
+
+.hd {
+    background: none !important;
+}
+
+.detail_activite_type {
+    background-color: var(--bg2-color) !important;
+}
+
+.panel--bg-lightest, .content-toolbar, .jstree-default, .jstree-anchor, .jstree-default, .jstree-wholerow, .content-filter,
+.list--lined>li, .list--outlined-between>li, .list--outlined>li, .list--overlined>li, .list-enhanced1--inset>li, .list-enhanced1>li,
+#page, select, .yui-skin-sam .yui-dt th, .score, .panel--outlined, #selecteur_groupe_vue, .m-reset, #navigation_cahier_texte,
+.yui-skin-sam .yui-panel .bd, .yui-skin-sam .yui-panel .ft, .yui-skin-sam .yui-panel .hd, #seance_detail_conteneur,
+#seance_actions {
     background-color: var(--bg-color) !important;
     border: 0 !important;
     color: var(--font-color) !important;
@@ -58,9 +92,9 @@ select,
     color: #708c9a !important;
 }
 
-.js-signature {
+/*.js-signature {
     background-color: #fff !important;
-}
+}*/
 
 /* notes */
 tr:hover {

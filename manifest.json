@@ -1,18 +1,13 @@
 {
   "name": "MBN DarkTheme",
   "description": "Apply a custom theme to MBN",
-  "version": "1.0",
+  "version": "1.1",
   "manifest_version": 3,
   "content_scripts": [
     {
-      "matches": ["https://*.monbureaunumerique.fr/*", "https://monbureaunumerique.fr/*"],
-      "css": ["style.css"],
-      
-      "exclude_matches": ["https://*.moodle.monbureaunumerique.fr/*"]
-    },
-    {
-      "matches": ["https://*.moodle.monbureaunumerique.fr/*"],
-      "css": ["moodle.css","style.css"]
+      "matches": ["https://*.monbureaunumerique.fr/*"],
+      "exclude_matches": ["https://*.moodle.monbureaunumerique.fr/*"],
+      "css": ["style.css"]
     }
   ],
   "icons": {
