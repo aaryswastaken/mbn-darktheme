@@ -1,5 +1,5 @@
 :root {
-    --bg-color: #1E1E1E;
+    --bg-color: #1e1e1e;
     --bg2-color: #525252;
     --bg3-color: #3a3a3a;
     --font-color: #e3e9ec;
@@ -105,20 +105,25 @@ td {
     border: 0 !important;
 }
 
-tr.yui-dt-even, tr.yui-dt-even > td {
+tr.yui-dt-even,
+tr.yui-dt-even > td {
     background-color: var(--bg3-color) !important;
 }
 
-tr.yui-dt-odd, tr.yui-dt-odd > td {
+tr.yui-dt-odd,
+tr.yui-dt-odd > td {
     background-color: var(--bg-color) !important;
 }
 
-.gestion fieldset, #contenu .fieldset, #popin_question fieldset {
+.gestion fieldset,
+#contenu .fieldset,
+#popin_question fieldset {
     color: var(--font-color) !important;
     background-color: var(--bg-color) !important;
 }
 
-#grille_dossier_absence > table > * > tr, .yui-dt-first > th {
+#grille_dossier_absence > table > * > tr,
+.yui-dt-first > th {
     background-color: var(--bg-color) !important;
 }
 
@@ -145,4 +150,181 @@ tr.yui-dt-odd, tr.yui-dt-odd > td {
 
 .js-consulterMessage {
     color: #08bee8 !important;
+}
+
+/* NEW */
+
+.bg--slate-lighter {
+    background: var(--bg-color) !important;
+}
+
+.panel.panel--inset,
+.bg-filler__img {
+    border-radius: 8px;
+}
+
+.bg-filler__svg {
+    filter: opacity(0.2);
+    border-radius: 8px;
+}
+
+.divider,
+hr {
+    border-color: var(--bg3-color) !important;
+}
+
+input[type="checkbox"] ~ label:before {
+    filter: opacity(0.5);
+}
+
+.score, .yui-skin-sam .yui-panel .bd {
+    background-color: var(--bg3-color) !important;
+    border-color: var(--bg3-color) !important;
+}
+.yui-skin-sam .yui-panel .hd {
+    background: var(--bg2-color) !important;
+    color: white !important;
+}
+
+.text--warn {
+    color: #ff485a !important;
+}
+
+.icon--non-attendance {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Ccircle fill='%235557' stroke='%23ff485a' r='7.5' cx='8' cy='8'/%3E%3Ccircle fill='%23ff485a' r='3' cx='8' cy='8'/%3E%3C/svg%3E") !important;
+}
+
+.icon--lateness {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Ccircle fill='%235557' stroke='%23ff6c3b' r='7.5' cx='8' cy='8'/%3E%3Cpath fill='%23ff6c3b' d='M12.33 10.5A5 5 0 118 3v5z'/%3E%3C/svg%3E") !important;
+}
+
+.icon--clock-comp {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Ccircle cx='50%25' cy='50%25' r='8' fill='%238ea4af' style=' fill: %23343c40;%0A'%3E%3C/circle%3E%3Ccircle cx='50%25' cy='50%25' r='6.3' fill='%23fff' style=' fill: %231e1e1e;%0A'%3E%3C/circle%3E%3Cpath fill='%238ea4af' d='M4.36 9.055l2.819-1.026.342.94-2.82 1.026z'%3E%3C/path%3E%3Cpath fill='%238ea4af' d='M7 4h1v5H7z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.cartouche--neutral {
+    background-color: var(--bg2-color) !important;
+    border-color: var(--bg3-color) !important;
+    color: #eee !important;
+}
+
+.btn--secondary {
+    background: var(--bg-color) !important;
+}
+
+.dropdown__content,
+.dropdown__list .btn {
+    background-color: var(--bg3-color) !important;
+}
+.dropdown__list .btn:not(:disabled):hover {
+    background-color: var(--bg-color) !important;
+}
+
+.btn--as-link:focus,
+.btn--as-link:hover {
+    color: #eee !important;
+}
+
+.js-pagination-message .btn--disabled,
+.js-signature {
+    background: transparent !important;
+}
+
+.dropdown__list .btn:not(:disabled),
+.btn--secondary:not([disabled]):focus,
+.btn--secondary:not([disabled]):hover,
+.checkbox-pills__label--secondary:not([disabled]):focus,
+.checkbox-pills__label--secondary:not([disabled]):hover,
+.radio-pills__label--secondary:not([disabled]):focus,
+.radio-pills__label--secondary:not([disabled]):hover,
+[type="checkbox"]:checked
+    ~ label.checkbox-pills__label--primary:not([disabled]):focus,
+[type="checkbox"]:checked
+    ~ label.checkbox-pills__label--primary:not([disabled]):hover,
+[type="radio"]:checked
+    ~ label.radio-pills__label--primary:not([disabled]):focus,
+[type="radio"]:checked
+    ~ label.radio-pills__label--primary:not([disabled]):hover {
+    color: white !important;
+}
+
+.options {
+    background-color: var(--bg3-color);
+}
+
+.table {
+    background-color: var(--bg-color);
+}
+
+.table thead th {
+    background-color: var(--bg3-color);
+    color: white;
+}
+
+.form__control[type="email"],
+.form__control[type="file"],
+.form__control[type="password"],
+.form__control[type="search"],
+.form__control[type="tel"],
+.form__control[type="text"],
+.form__control[type="url"],
+textarea.form__control {
+    background: var(--bg3-color) !important;
+    color: white !important;
+    border-radius: 8px !important;
+}
+
+.msg--neutral,
+.msg--neutral .msg__picture {
+    background: var(--bg3-color) !important;
+    color: #eee !important;
+}
+.panel--success {
+    background: transparent !important;
+    border: 3px solid #6de16d !important;
+    color: white !important;
+}
+
+.gestion fieldset, #contenu .fieldset, #popin_question fieldset {
+    border: 2px solid var(--bg3-color);
+}
+
+div .bloc-note-releve .note-releve {
+    color: #b9b9b9;
+}
+
+.devoir-facultatif-note, div .bloc-note-releve .note-releve {
+    background: var(--bg3-color) !important;
+}
+:root {
+    --border-bloc-radius : 3px;
+    --border-panel-radius : 8px;
+}
+.note-releve {  
+    border-top-left-radius: var(--border-bloc-radius);
+    border-top-right-radius: var(--border-bloc-radius);
+}
+.note-releve-max {
+    border-bottom-left-radius: var(--border-bloc-radius);
+    border-bottom-right-radius: var(--border-bloc-radius);
+} 
+
+.yui-skin-sam .yui-panel .hd {  
+    border-top-left-radius: var(--border-panel-radius);
+    border-top-right-radius: var(--border-panel-radius);
+}
+.yui-skin-sam .yui-panel .bd {
+    border-bottom-left-radius: var(--border-panel-radius);
+    border-bottom-right-radius: var(--border-panel-radius);
+}
+.yui-skin-sam .yui-panel {
+    border-radius: 8px;
+}
+.bloc-note-releve {
+    border-radius: var(--border-bloc-radius);
+    box-shadow: inset #777 0 0 0 20px;
+}
+.icon-placeholder {
+    background-image: none !important;
+    background-color: #0000 !important;
 }
