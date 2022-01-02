@@ -6,11 +6,8 @@
   "content_scripts": [
     {
       "matches": ["https://*.monbureaunumerique.fr/*"],
+      "exclude_matches": ["https://*.moodle.monbureaunumerique.fr/*"],
       "css": ["style.css"]
-    },
-    {
-      "matches": ["https://*.moodle.monbureaunumerique.fr/*"],
-      "css": ["moodle.css"]
     }
   ],
   "icons": {
