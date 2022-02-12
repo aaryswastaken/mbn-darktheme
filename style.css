@@ -101,6 +101,14 @@ tr:hover {
     background-color: var(--bg2-color) !important;
 }
 
+tr.nohover:hover {
+    background-color: var(--bg-color) !important;
+}
+
+#releve-enseignant, #releve-eleve, #notation-devoir {
+    overflow-x: inherit !important;
+}
+
 td {
     border: 0 !important;
 }
